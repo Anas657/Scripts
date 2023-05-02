@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DataTypes</title>
+</head>
+
+<body>
+
+  <div id="showname">Hello</div>
+  <script>
+
+    const newcars = [
+
+
+      { id: 1, name: "Audi", modify: "outcome", color: "Black" },
+      { id: 2, name: "Mehran", modify: "Suzuki", color: "Mehroon" },
+      { id: 3, name: "Alto", modify: "Suzuki", color: "Light Blue" },
+
+
+    ];
+    console.log(newcars);
+
+    console.log("My name is" + newcars[0].name);
+    console.log("My name is" + newcars[1].name);
+    console.log("My name is" + newcars[2].name);
+
+
+
+    const usedcars = newcars.map((value, i) => {
+      console.log(i, value.name);
+      return `My name is ${value.name} <br> My id number is ${value.id + 0} <br> My modify is ${value.modify} <br> My color is ${value.color} <br>` + "<br> <br>"
+
+    })
+     console.log(usedcars);
+     document.getElementById('showname').innerHTML = usedcars;
+     newcars.innerHTML = newcars.join(" ")
+     
+    // const Excelsheet = [
+    //   { Empname: "Yasir", allowance: "10%", groosprofit: "nill" },
+    //   { Empname: "Hammad", allowance: "16%", groosprofit: "nill" },
+    //   { Empname: "Ahsan", allowance: "12%", groosprofit: "nill" },
+    //   { Empname: "Nick", allowance: "8%", groosprofit: "nill" },
+    // ];
+    // console.log(Excelsheet);
+
+  </script>
+</body>
+
+</html>
